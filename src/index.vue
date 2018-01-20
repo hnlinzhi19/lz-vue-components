@@ -1,9 +1,8 @@
 <template>
-    <div>Hello {{ World }}! <ComponentA /></div>
+    <div>Hello {{ World }}! </div>
 </template>
 
 <script>
-import ComponentA from './ComponentA';
 import World from './World';
 
 export default {
@@ -11,9 +10,6 @@ export default {
         return {
             World
         };
-    },
-    components: {
-        ComponentA
     },
     mounted(){
         this.$toast('xxxx');
